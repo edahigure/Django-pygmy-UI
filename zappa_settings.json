@@ -1,0 +1,29 @@
+{
+    "dev": {
+        "aws_region": "us-east-2",
+        "django_settings": "pygmyui.pygmyui.settings",
+        "exclude": [
+            "boto3",
+            "dateutil",
+            "botocore",
+            "s3transfer",
+            "concurrent"
+        ],
+        "profile_name": "default",
+        "project_name": "ui-django-app",
+        "runtime": "python3.10",
+        "s3_bucket": "zappa-ub2wf9qzt"
+    },
+    "vpc_config" : {
+            "SubnetIds": [ "subnet-0f93d838df15c3874","subnet-0295b5df125517481" ],
+            "SecurityGroupIds": [ "sg-006c2553dca6207a7" ]
+        },
+        "db_settings": {
+            "engine": "django.db.backends.mysql",
+            "name": "djangodb",
+            "user": "admin",
+            "password": "Ed_95611189",
+            "host": "django-mysqldb.cdmyq064u1wh.us-east-2.rds.amazonaws.com",
+            "port": "3306"
+        }
+}
